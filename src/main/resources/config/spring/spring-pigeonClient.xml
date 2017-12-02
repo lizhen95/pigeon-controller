@@ -16,7 +16,7 @@
 		<!-- 接口名称，必须设置 -->
 		<property name="interfaceName" value="com.pigeon.module.test.service.TestService" />
 		<!-- 超时时间，毫秒，默认5000，建议自己设置 -->
-		<property name="timeout" value="2000" />
+		<property name="timeout" value="5000" />
 		<!-- 序列化，hessian/fst/protostuff，默认hessian，可不设置 -->
 		<property name="serialize" value="hessian" />
 		<!-- 调用方式，sync/future/callback/oneway，默认sync，可不设置 -->
