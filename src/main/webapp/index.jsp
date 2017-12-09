@@ -27,7 +27,6 @@
 <script >
 $(function(){
 $("#select").click(function() {
-	alert("12");
             $.ajax({
                 url : "test/showTest",
                 type : "POST",
