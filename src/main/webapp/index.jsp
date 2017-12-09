@@ -21,7 +21,10 @@
 <div class="panel-body">
     <h2 class="text-danger text-center">
         <!-- 用来显示查找结果 -->
-        <span class="glyphicon" id="select-box"></span>
+        <span class="glyphicon" id="select-box"></span><br>
+        <span class="glyphicon" id="id"></span><br>
+        <span class="glyphicon" id="name"></span><br>
+        <span class="glyphicon" id="telephone"></span><br>
     </h2>
 </div>
 <script >
@@ -37,7 +40,10 @@ $("#select").click(function() {
                 }),
                 success:function(result) {
                     var message= JSON.stringify(result);
-                    $("#select-box").html("查询成功" + message);
+                    $("#select-box").html("查询成功，String格式：" + message);
+                    $("#id").html("账号：" + result.id);
+                    $("#name").html("姓名：" + result.name);
+                    $("#telephone").html("电话：" + result.telephone);
                 },
                 error:function(result){
                     $("#select-box").html("查询失败");
